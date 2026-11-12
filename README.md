@@ -18,6 +18,32 @@ A sleek, minimalist, offline-first mobile habit tracker built with **React Nativ
 
 ---
 
+## How to Use the App
+
+The app is organized into three intuitive screens accessible via the bottom navigation tabs:
+
+### 1. Today Screen (`Today` tab)
+- **Log Daily Completions**: Tap the circular checkbox on any habit card to toggle it done/undone. A tactile vibration (`expo-haptics`) confirms the action.
+- **Navigate Dates**: Scroll the horizontal calendar date strip to view or backfill habits for past days or preview future days.
+- **Monitor Daily Progress**: The top header pill dynamically calculates your completion rate (e.g., `3/4 · 75%`).
+- **Create New Habits**: Tap the floating `+` button in the bottom right corner:
+  1. Enter a habit title (e.g. *Drink 2.5L Water*, *Read 20 pages*).
+  2. Select a category tag (*Health*, *Fitness*, *Learning*, *Career*, or *Mindfulness*).
+  3. Choose an optional daily reminder time (e.g. *08:30 AM*, *09:00 PM*).
+  4. Tap **Create Habit** to save and schedule its local notification.
+
+### 2. Analytics Screen (`Analytics` tab)
+- **Review Completion Stats**: Track daily completion percentage and all-time longest streak records.
+- **Category Breakdown**: View visual progress bars showing how your habits are distributed across categories.
+- **Streak Leaderboard**: See which habits have your highest consecutive daily streaks ranked in real time.
+
+### 3. Settings Screen (`Settings` tab)
+- **Manage Alerts & Haptics**: Turn push notifications and vibration feedback on or off.
+- **Test Notifications**: Tap **Send Test Notification** to test system notification permissions and alerts.
+- **Data Management**: Tap **Reset Habit Data** anytime to restore default sample habits.
+
+---
+
 ## Tech Stack
 
 - **Framework**: [Expo](https://expo.dev) (SDK 57) / [React Native](https://reactnative.dev) (v0.86)
